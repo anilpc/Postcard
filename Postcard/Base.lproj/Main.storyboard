@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Bgo-ry-l6Q"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wjw-H6-6BJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="qcI-Rc-XBm">
@@ -63,7 +64,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="280" width="287" height="30"/>
+                                    <rect key="frame" x="53" y="375" width="287" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N1o-tw-D59">
@@ -71,7 +72,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="339" width="287" height="30"/>
+                                    <rect key="frame" x="53" y="434" width="287" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPd-Kd-Xl9">
@@ -82,7 +83,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="52" y="244" width="124" height="23"/>
+                                    <rect key="frame" x="53" y="339" width="124" height="23"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MeA-EB-gM7"/>
@@ -100,9 +101,18 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tPR-Gx-ajb">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="259" y="187" width="80" height="80"/>
+                                    <rect key="frame" x="260" y="282" width="80" height="80"/>
                                 </variation>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zma-SH-vHG">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="44" y="189" width="198" height="56"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,6 +122,7 @@
                                 <exclude reference="BPd-Kd-Xl9"/>
                                 <exclude reference="7Xi-uy-ODI"/>
                                 <exclude reference="tPR-Gx-ajb"/>
+                                <exclude reference="zma-SH-vHG"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,6 +132,7 @@
                                 <include reference="BPd-Kd-Xl9"/>
                                 <include reference="7Xi-uy-ODI"/>
                                 <include reference="tPR-Gx-ajb"/>
+                                <include reference="zma-SH-vHG"/>
                             </mask>
                         </variation>
                     </view>
@@ -128,6 +140,7 @@
                         <outlet property="enterMessageTextField" destination="N1o-tw-D59" id="D9f-ea-xXK"/>
                         <outlet property="enterNameTextField" destination="c0F-YT-4Sm" id="vaD-W9-p1V"/>
                         <outlet property="mailButton" destination="BPd-Kd-Xl9" id="6qP-Ob-Eg6"/>
+                        <outlet property="message2Label" destination="zma-SH-vHG" id="MS1-iC-EiE"/>
                         <outlet property="messageLabel" destination="7Xi-uy-ODI" id="Biy-Pg-dgU"/>
                     </connections>
                 </viewController>
